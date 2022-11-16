@@ -5,10 +5,9 @@ import (
 	"net/http"
 	"strings"
 
+	"cloud.google.com/go/storage"
 	"google.golang.org/appengine"
 	"google.golang.org/appengine/urlfetch"
-	"google.golang.org/cloud"
-	"google.golang.org/cloud/storage"
 
 	"golang.org/x/net/context"
 	"golang.org/x/oauth2"

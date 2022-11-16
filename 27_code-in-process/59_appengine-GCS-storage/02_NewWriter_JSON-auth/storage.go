@@ -1,10 +1,11 @@
 package storage
 
 import (
-	"google.golang.org/appengine"
-	"google.golang.org/cloud/storage"
 	"io"
 	"net/http"
+
+	"cloud.google.com/go/storage"
+	"google.golang.org/appengine"
 )
 
 const gcsBucket = "learning-1130-bucket-01"

@@ -8,10 +8,10 @@ import (
 	"golang.org/x/net/context"
 	"golang.org/x/oauth2/google"
 
-	"google.golang.org/appengine"
-	"google.golang.org/cloud"
-	"google.golang.org/cloud/storage"
 	"io/ioutil"
+
+	"cloud.google.com/go/storage"
+	"google.golang.org/appengine"
 )
 
 const gcsBucket = "learning-1130-bucket-01"

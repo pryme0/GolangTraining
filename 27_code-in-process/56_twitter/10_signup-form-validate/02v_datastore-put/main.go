@@ -2,13 +2,14 @@ package main
 
 import (
 	"fmt"
-	"github.com/julienschmidt/httprouter"
-	"google.golang.org/appengine"
-	"google.golang.org/appengine/datastore"
 	"html/template"
 	"io/ioutil"
 	stdlog "log"
 	"net/http"
+
+	"github.com/julienschmidt/httprouter"
+	"google.golang.org/appengine"
+	"google.golang.org/appengine/datastore"
 )
 
 type User struct {
@@ -85,7 +86,7 @@ FYI - watch out for this error:
 On your imports ... you don't want this:
 
 "google.golang.org/appengine"
-"google.golang.org/cloud/datastore"
+"cloud.google.com/go/datastore"
 
 You want this:
 

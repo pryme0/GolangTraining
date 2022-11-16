@@ -1,9 +1,10 @@
 package filebrowser
 
 import (
-	"golang.org/x/net/context"
-	"google.golang.org/cloud/storage"
 	"io"
+
+	"cloud.google.com/go/storage"
+	"golang.org/x/net/context"
 )
 
 func listBucket(ctx context.Context, bucketName, folder string) ([]string, []string, error) {

@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"github.com/julienschmidt/httprouter"
 	"google.golang.org/appengine"
-	"google.golang.org/cloud/datastore"
+	"cloud.google.com/go/datastore"
 	"encoding/json"
 	"google.golang.org/appengine/log"
 )
